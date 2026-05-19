@@ -1,0 +1,83 @@
+body{
+margin: 0;
+padding: 0;
+background-color: #f9f2ea; /* cream background */
+font-family: "Brush Script MT", cursive;;
+color: #333;
+}
+/*images */
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+/* Header */
+header{
+background-color: #8e88a3; 
+padding: 20px;
+}
+
+/* Website Title */
+header h2{
+margin: 0;
+font-family: "Instrument Serif", serif;
+font-size: 36px;
+color: #100f10;
+}
+/*shanys handmade Toys Name*/
+.nameofbusiness{
+    font-family: "last kids on earth", cursive;  
+    font-size: 28px;
+    font-weight: bold;}
+
+/* Navigation Menu */
+nav a{
+text-decoration: none;
+color: #2b292a;
+font-weight: 600;
+margin-left: 20px;
+/*Slogan Slogan and search bar*/
+}
+section {
+    background-color: #ebe1c6; /* cream */
+    padding: 10px 20px;
+}
+section table {
+    width: 100%;
+}
+section p {
+    font-family: "Brush Script MT", cursive;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+/* Hover Effect */
+nav a:hover{
+color: white;
+}
+
+/* Main Content Area */
+main{
+padding: 40px;
+background-color: #fffaf4;
+}
+
+
+/* Buttons */
+button{
+background-color: #758976; 
+color: #000000;
+border: none;
+padding: 12px 24px;
+border-radius: 25px;
+cursor: pointer;
+}
+
+/* Footer */
+footer{
+background-color: #ccbbdb; /* light purple */
+color: #4b2e57;
+text-align: center;
+padding: 15px;
+margin-top: 40px;
+}
