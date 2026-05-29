@@ -9,14 +9,8 @@
 <body>
 
 <!-- Header -->
- <header>
-<table width="100%">
-    <tr>
-        <td>
-            <h2 class="nameofbusiness">Shany's Handmade Toys</h2>
-        </td>
-
-        <td align="right">
+<header>
+<h2 class="nameofbusiness">Shany's Handmade Toys</h2>
             <nav>
                 <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="Catalogue.html">Catalogue</a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -24,21 +18,14 @@
                 <a href="Review.html">Reviews</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="Contact.html">Contact Us</a>
             </nav>
-        </td>
-    </tr>
-</table>
 </header>
 <!-- Slogan + Image + Search -->
 <section>
 <table width="100%">
-    <tr>
-        <td>
-            <img src="images/logo.png" alt="Picture of diverse dolls" width="100">
-        </td>
-
-        <td>
-            <p>A Toy for Every Child. A Memory for Every Heart</p>
-        </td>
+    <td class="logo-area">
+    <img src="images/logo.png" alt="Picture of diverse dolls" width="100">
+    <p>A Toy for Every Child. A Memory for Every Heart</p>
+    </td>
 
         <td align="right"><!--searching for a toy will use javascript to activate-->
             <form>
@@ -49,9 +36,9 @@
 </table>
 </section>
 <!-- Popular Toys -->
-<h2>Shop Most Popular Toys</h2>
+<h2 align="center"><b>Shop Most Popular Toys</b></h2>
 
-<table width="100%">
+<table width="100%" >
     <tr align="center">
         <td><img src="images/gingergirl.png" width="150" alt="Ginger Girl Doll"></td>
         <td><img src="images/ragdoll.png" width="150" height="300" alt="Rag Doll specials"></td>
@@ -73,27 +60,21 @@
     </tr>
 </table>
 
-<br>
-
-
  <!-- Video showing how our toys are made -->
-<p >
-  <video width="100%" controls>
+<div class="video-container">
+<video controls>
  <source src="images/Howitsmade.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
-</p>
-
+</div>
 <br>
 
-<hr>
-
 <!-- Reviews Section -->
-<table width="100%" border="1">
+<table width="100%" border="0">
     
     <tr>
         <td align="left">
-            <h2>REAL CUSTOMER REVIEWS</h2>
+            <h2><b>Real Customer Reviews</b></h2>
         </td>
     </tr>
 
@@ -138,15 +119,35 @@
 
 </table>
 <br>
-
 <!-- Maps section and contact details -->
-<table width="100%">
+ <div class="contact-section">
+ <style>
+.contact-table{
+    background-color: #F3ECFF;
+    border-radius: 15px;
+    padding: 20px;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.contact-table p{
+    margin: 5px 0; /* removes big spacing */
+}
+
+iframe{
+    border: 0;
+    display: block;
+}
+</style>
+<table class="contact-table" width="100%">
     <tr>
-        <td width="50%" align="center" border="0">
-            <h2>Maps</h2>
-            <p>Location 1:The Crossing Mahikeng ,Northwest South Africa</p>
-            <p>Location 2: Mega City,Northwest South Africa</p>
-        </td>
+        <td width="50%" align="center">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.594506281391!2d25.636368574498!3d-25.856529077292503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ea2cae78364c3b3%3A0x964865997e30c27f!2sMahikeng%20Mall!5e1!3m2!1sen!2sza!4v1780078959018!5m2!1sen!2sza"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    <p>The Crossing Mahikeng Mall , North West South Africa</p>
+</td>
 
         <td width="50%" align="center" border="1">
             <h3>Contact Us</h3>
@@ -156,15 +157,15 @@
         </td>
     </tr>
 </table>
-<hr>
+</div>
 <!-- Footer -->
 <footer>
-    <p>
+    <p align="center">
         Follow us: 
         <a href="https://www.instagram.com/shanystoys">Instagram</a> | 
         <a href="https://wa.me/27730902566">WhatsApp</a>
     </p>
-    <p align="right">&copy; 2026 Shany's Handmade Toys. All rights reserved.</p>
+    <p align="center">&copy; 2026 Shany's Handmade Toys. All rights reserved.</p>
 </footer>
 </body>
 </html>
