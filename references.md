@@ -19,3 +19,5 @@ Mattel (2025) Barbie official website. Available at: https://shop.mattel.com/pag
 Host Africa (2025) Web hosting – free domain included. Available at: https://hostafrica.co.za/web-hosting/ (Accessed: 14 April 2026).
 
 African Soxy Animal (2021) Handmade zebra plush toy – 100% cotton sock soft toy for kids. Available at: https://www.africansoxyanimal.co.za/product/sock-zebra-handmade-plush-toy/ (Accessed: 14 April 2026).
+Google Maps. (2026). *The Crossing, Mahikeng, North West, South Africa*.  
+Available at: https://www.google.com/maps
