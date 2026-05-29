@@ -1,83 +1,125 @@
 body{
 margin: 0;
 padding: 0;
-background-color: #f9f2ea; /* cream background */
-font-family: "Brush Script MT", cursive;;
+background-color: #F9F2EA; /* cream background */
+font-family: "Poppins", sans-serif;
 color: #333;
+line-height: 1.5
 }
+
 /*images */
 img {
   width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  height: 300px;
+  border-radius: 10%;
+  object-fit: cover;
 }
+img:hover { transform: scale(1.25) }
+
 /* Header */
 header{
-background-color: #8e88a3; 
-padding: 20px;
+background-color: #AA83B6; 
+padding: 15px 25px;
+display: flex; /*Added flexbox to header for better layout*/
+justify-content: space-between;
+align-items: center; /* center so that slogan is on the middle*/
 }
 
 /* Website Title */
 header h2{
 margin: 0;
-font-family: "Instrument Serif", serif;
+font-family: "Pacifico", cursive;
 font-size: 36px;
-color: #100f10;
+font-weight: bold;
+color: #2B292A;
 }
+
 /*shanys handmade Toys Name*/
 .nameofbusiness{
-    font-family: "last kids on earth", cursive;  
-    font-size: 28px;
-    font-weight: bold;}
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2B292A;
+}
 
 /* Navigation Menu */
 nav a{
 text-decoration: none;
-color: #2b292a;
-font-weight: 600;
+color: #2B292A;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
 margin-left: 20px;
-/*Slogan Slogan and search bar*/
+transition: 0.3s ease;
+
+/*Slogan and search bar*/
 }
+
 section {
-    background-color: #ebe1c6; /* cream */
-    padding: 10px 20px;
+    background-color: #D4C1E8; /* cream */
+    padding: 4px 15px;
 }
+
+section img {
+    width: 25%;   /*Adjusted the width of the image logo*/
+    height: 50%;
+}
+
 section table {
     width: 100%;
 }
+
 section p {
-    font-family: "Brush Script MT", cursive;
-    font-weight: bold;
-    font-size: 30px;
+    font-family: "Great Vibes", cursive;
+    font-size: 24px;
     margin: 0;
+    color: #5A4A52;
 }
+
 /* Hover Effect */
 nav a:hover{
-color: white;
+color: #F4E6EC;
 }
 
 /* Main Content Area */
 main{
 padding: 40px;
-background-color: #fffaf4;
+background-color: #FFFAF4;
 }
-
 
 /* Buttons */
 button{
-background-color: #758976; 
-color: #000000;
+background-color: #D9A7A7;
+color: #2B292A;
 border: none;
 padding: 12px 24px;
 border-radius: 25px;
 cursor: pointer;
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+transition: 0.3s ease;
 }
+button:active { transform: scale(0.98) }
 
+button:hover{
+background-color: #B58DAF;
+color: white;
+}
 /* Footer */
 footer{
-background-color: #ccbbdb; /* light purple */
-color: #4b2e57;
+background-color: #AA83B6; /* same as header */
+color: #4B2E57;
 text-align: center;
 padding: 15px;
 margin-top: 40px;
+font-family: "Poppins", sans-serif;
 }
+footer a{
+text-decoration: none;
+color: #2B292A;
+font-weight: bold;
+}
+
+footer a:hover{
+color: #F4E6EC;
+}
+footer p:last-child { margin-bottom:0 }
