@@ -12,11 +12,19 @@
 <h2 class="nameofbusiness">Shany's Handmade Toys</h2>
             <nav>
                 <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="catalogue.html">Catalogue</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="catalogue.html">Shop</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="about.html">About Us</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="review.html">Reviews</a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="contact.html">Contact Us</a>
             </nav>
+<nav>
+<a href="cart.html" id="cartCount" aria-label="Shopping cart">
+    <svg width="18" height="18" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.82 14h7.36c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 19.5 5H6.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C5.52 15.37 6.48 17 8 17h9v-2H8.42l.4-.88z"/>
+    </svg>
+    <span id="cartNumber">0</span>
+</a>
+</nav>
 </header>
 <!-- Slogan + Image + Search -->
 
@@ -37,116 +45,151 @@
 </section>
 
 <!-- Catalogue Section -->
- <h2 align="center"><b>Our Collection</b></h2>
-<table class="catalogue-table" border="0" width="100%" cellspacing="0" cellpadding="0" >
-<!--Information about the toys in the catalogue will be displayed in a table format with images, names, prices and shop now buttons.-->
- <!--Each row will represent a different toy, and the columns will include the toy's image, name, price, and a "Shop Now" button that links to the product page.-->
-<!--Buutons will be be made active using java script  -->
-<!-- ROW 1 -->
-  <tr>
-    <td><img src="images/afrogirl.png" width="50%" alt="Afro doll"></td>
-    <td><img src="images/gingergirl.png" width="50%" alt="Ginger braids doll"></td>
-    <td><img src="images/vintiligogirlgreen.png" width="50%" alt="Vitiligo doll green dress"></td>
-    <td><img src="images/vitiligogirl.png" width="50%" alt="Vitiligo braids doll"></td>
-  </tr>
-  <tr>
-    <td>Afro Doll Natural Hair</td>
-    <td>Ginger Braids Doll</td>
-    <td>Vitiligo Doll  Green Dress</td>
-    <td>Vitiligo Braids Doll</td>
-  </tr>
-  <tr>
-    <td>R1800</td>
-    <td>R1800</td>
-    <td>R2000</td>
-    <td>R2000</td>
-  </tr>
-  <tr>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-  </tr>
+<p>
+    <label for="sortSelect">Sort:</label>
 
-  <!-- ROW 2 -->
-  <tr>
-    <td><img src="images/blindgirl.png" width="50%" alt="Visually impaired doll"></td>
-    <td><img src="images/deafgirl.png" width="50%" alt="Deaf awareness doll"></td>
-    <td><img src="images/icegirl.png" width="50%" alt="Ice skater doll"></td>
-    <td><img src="images/wheelchairgirl.png" width="50%" alt="Wheelchair doll"></td>
-  </tr>
-  <tr>
-    <td>Visually Impaired Doll</td>
-    <td>Deaf Awareness Doll</td>
-    <td>Ice Skater Doll</td>
-    <td>Wheelchair User Doll</td>
-  </tr>
-  <tr>
-    <td>R1900</td>
-    <td>R1900</td>
-    <td>R1700</td>
-    <td>R2100</td>
-  </tr>
-  <tr>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-  </tr>
+    <select id="sortSelect">
+        <option value="priceLow">Price: Low to High</option>
+        <option value="priceHigh">Price: High to Low</option>
+        <option value="nameAZ">Name: A to Z</option>
+        <option value="nameZA">Name: Z to A</option>
+    </select>
 
-  <!-- ROW 3 -->
-  <tr>
-    <td><img src="images/sarigirl.png" width="50%" alt="Sari doll"></td>
-    <td><img src="images/tennisgirl.png" width="50%" alt="Tennis doll"></td>
-    <td><img src="images/soccerboy.png" width="50%" alt="Soccer doll"></td>
-    <td><img src="images/shorthairtrad.png" width="50%" alt="Traditional short hair doll"></td>
-  </tr>
-  <tr>
-    <td>Sari Cultural Doll</td>
-    <td>Tennis Player Doll</td>
-    <td>Soccer Player Doll</td>
-    <td>Traditional Short Hair Doll</td>
-  </tr>
-  <tr>
-    <td>R2000</td>
-    <td>R1700</td>
-    <td>R1700</td>
-    <td>R1800</td>
-  </tr>
-  <tr>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-  </tr>
+    <label for="filterSelect">Theme:</label>
 
-  <!-- ROW 4 -->
-  <tr>
-    <td><img src="images/longhairtrad.png" width="50%" alt="Traditional long hair doll"></td>
-    <td><img src="images/tradboy.png" width="50%" alt="Traditional boy doll"></td>
-    <td><img src="images/braille.jpg" width="50%" alt="Braille puzzele "></td>
-    <td><img src="images/toycar.png" width="50%" alt="Toy car"></td>
-  </tr>
-  <tr>
-    <td>Traditional Long Hair Doll</td>
-    <td>Traditional Boy Doll</td>
-    <td>Braille Learning Puzzele</td>
-    <td>Toy Car</td>
-  </tr>
-  <tr>
-    <td>R1800</td>
-    <td>R1800</td>
-    <td>R2200</td>
-    <td>R900</td>
-  </tr>
-  <tr>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-    <td><button>Shop Now</button></td>
-  </tr>
-</table>
+    <select id="filterSelect">
+        <option value="all">All Toys</option>
+        <option value="inclusive">Inclusion & Disabilities</option>
+        <option value="cultural">Cultural Heritage</option>
+        <option value="sports">Sports & Activities</option>
+        <option value="fashion">Fashion & Style</option>
+        <option value="educational">Educational Learning</option>
+        <option value="vehicles">Vehicles</option>
+    </select>
+    <label for="priceRange">Max Price:</label>
+    <input type="range" id="priceRange" min="0" max="2500" step="250" value="2500">
+    <span id="priceValue">R2500</span>
+</p>
+ <!--Information about the toys in the catalogue will be displayed in a table format with images, names, prices and Add To Cart buttons.-->
+ <!--Each row will represent a different toy, and the columns will include the toy's image, name, price, and a "Add To Cart" button that links to the product page.-->
+<!--Butons will be be made active using java script  -->
+<div id="catalogue">
+
+    <div class="toy" data-category="cultural" data-price="1800" data-name="Afro Doll Natural Hair">
+        <img src="images/afrogirl.png" width="50%" alt="Afro doll">
+        <p>Afro Doll Natural Hair</p>
+        <p>R1800</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="cultural" data-price="1800" data-name="Ginger Braids Doll">
+        <img src="images/gingergirl.png" width="50%" alt="Ginger braids doll">
+        <p>Ginger Braids Doll</p>
+        <p>R1800</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="inclusive" data-price="1500" data-name="Vitiligo Doll Green Dress">
+        <img src="images/vintiligogirlgreen.png" width="50%" alt="Vitiligo doll green dress">
+        <p>Vitiligo Doll Green Dress</p>
+        <p>R1500</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="inclusive" data-price="1000" data-name="Vitiligo Braids Doll">
+        <img src="images/vitiligogirl.png" width="50%" alt="Vitiligo braids doll">
+        <p>Vitiligo Braids Doll</p>
+        <p>R1000</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="inclusive" data-price="1900" data-name="Visually Impaired Doll">
+        <img src="images/blindgirl.png" width="50%" alt="Visually impaired doll">
+        <p>Visually Impaired Doll</p>
+        <p>R1900</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="inclusive" data-price="1900" data-name="Deaf Awareness Doll">
+        <img src="images/deafgirl.png" width="50%" alt="Deaf awareness doll">
+        <p>Deaf Awareness Doll</p>
+        <p>R1900</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="sports" data-price="1700" data-name="Ice Skater Doll">
+        <img src="images/icegirl.png" width="50%" alt="Ice skater doll">
+        <p>Ice Skater Doll</p>
+        <p>R1700</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="inclusive" data-price="2100" data-name="Wheelchair User Doll">
+        <img src="images/wheelchairgirl.png" width="50%" alt="Wheelchair doll">
+        <p>Wheelchair User Doll</p>
+        <p>R2100</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="cultural" data-price="2000" data-name="Sari Cultural Doll">
+        <img src="images/sarigirl.png" width="50%" alt="Sari doll">
+        <p>Sari Cultural Doll</p>
+        <p>R2000</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="sports" data-price="500" data-name="Tennis Player Doll">
+        <img src="images/tennisgirl.png" width="50%" alt="Tennis doll">
+        <p>Tennis Player Doll</p>
+        <p>R500</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="sports" data-price="1700" data-name="Soccer Player Doll">
+        <img src="images/soccerboy.png" width="50%" alt="Soccer doll">
+        <p>Soccer Player Doll</p>
+        <p>R1700</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="cultural" data-price="1800" data-name="Traditional Short Hair Doll">
+        <img src="images/shorthairtrad.png" width="50%" alt="Traditional short hair doll">
+        <p>Traditional Short Hair Doll</p>
+        <p>R1800</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="cultural" data-price="1800" data-name="Traditional Long Hair Doll">
+        <img src="images/longhairtrad.png" width="50%" alt="Traditional long hair doll">
+        <p>Traditional Long Hair Doll</p>
+        <p>R1800</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="cultural" data-price="1800" data-name="Traditional Boy Doll">
+        <img src="images/tradboy.png" width="50%" alt="Traditional boy doll">
+        <p>Traditional Boy Doll</p>
+        <p>R1800</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="educational" data-price="2200" data-name="Braille Learning Puzzle">
+        <img src="images/braille.jpg" width="50%" alt="Braille puzzle">
+        <p>Braille Learning Puzzle</p>
+        <p>R2200</p>
+        <button>Add To Cart</button>
+    </div>
+
+    <div class="toy" data-category="vehicles" data-price="900" data-name="Toy Car">
+        <img src="images/toycar.png" width="50%" alt="Toy car">
+        <p>Toy Car</p>
+        <p>R900</p>
+        <button>Add To Cart</button>
+    </div>
+
+</div>
 <!-- End of catalogue section -->
+ 
 <footer>
     <p align="center">
         Follow us: 
@@ -155,5 +198,7 @@
     </p>
     <p align="center">&copy; 2026 Shany's Handmade Toys. All rights reserved.</p>
 </footer>
+<div id="notification"></div>
+<script src="js/script.js"></script> <!--linking to external java script file-->
 </body>
 </html>
