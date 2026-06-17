@@ -207,7 +207,7 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 /* Container for both dropdowns */
-p {
+.filters {
     display: flex;
     gap: 15px;
     align-items: center;
