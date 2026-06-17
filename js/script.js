@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     filterSelect.addEventListener("change", applyFilters);
     priceSlider.addEventListener("input", applyFilters);
 
-    // SORT (separate but still works)
+    // SORT 
     sortSelect.addEventListener("change", function () {
         let value = this.value;
         let sorted = [...toys];
@@ -102,6 +102,16 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         notification.classList.remove("show");
     }, 3000);
+    }
+    let notification = document.getElementById("formNotification");
+
+if (notification) {
+    notification.textContent = "Message submitted successfully!";
+    notification.classList.add("show");
+
+    setTimeout(() => {
+        notification.classList.remove("show");
+        notification.textContent = "";
+    }, 3000);
 }
-    
 });

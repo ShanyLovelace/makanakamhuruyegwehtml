@@ -15,7 +15,155 @@ font-family: "Poppins", sans-serif;
 color: #333;
 line-height: 1.5;
 }
+/* Reseting some default styles */
+/* Main Side-by-Side Flexbox Split Container */
+.layout-main-split {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 30px;
+    align-items: flex-start; /* Keeps columns at their native height */
+}
 
+/* Structural Column Alignments */
+.layout-left-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Spacing between left cards */
+}
+
+.layout-right-column {
+    flex: 1.2; 
+}
+
+/* Card Blocks - Sharp 12px rounded edges, crisp drop shadows, left text alignment */
+.toy-card-item, 
+.toy-form-wrapper-card {
+    background-color:#F3ECFF;/* light lilac background for cards */
+    border-radius: 12px;       
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+    padding: 30px;
+    text-align: left;       
+}
+
+/* Card Images Settings */
+.toy-card-img {
+    width: 35% !important;
+    max-width: 35% !important;
+    height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+    margin: 15px 0 !important;
+    transform: none !important; /* Prevents text clashing on load scaling */
+}
+.toy-card-img:hover {
+    transform: none !important; 
+}
+
+/* Typography Overrides */
+.toy-card-item h3, 
+.toy-form-wrapper-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #2B292A;
+}
+
+.toy-card-details p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Action view buttons adapted to match left flow layout */
+.toy-card-action-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    background-color: #D9A7A7; 
+    color: #2B292A;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+.toy-card-action-btn:hover {
+    background-color: #B58DAF;
+    color: white;
+}
+
+/* Left-aligned Custom Grid Form Fields */
+.toy-clean-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.toy-field-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.toy-field-group label {
+    font-weight: bold;
+    color: #2B292A;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* Custom form fields  */
+.toy-field-group input[type="text"],
+.toy-field-group input[type="tel"],
+.toy-field-group input[type="email"],
+.toy-field-group textarea {
+    width: 100% !important;
+    padding: 12px !important;
+    border: 1px solid #AA83B6 !important;
+    border-radius: 8px !important;
+    background-color: #ffffff !important;
+    box-sizing: border-box !important;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Submit Button Revised */
+.toy-form-submit-button {
+    width: 100% !important;
+    background-color: #D9A7A7 !important; 
+    color: #2B292A !important;
+    border: none !important;
+    padding: 14px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    transition: 0.3s ease !important;
+}
+.toy-form-submit-button:hover {
+    background-color: #B58DAF !important;
+    color: white !important;
+}
+
+/* Full Width Map Container Adjustments */
+.toy-bottom-map-container {
+    max-width: 1200px;
+    margin: 20px auto 40px auto;
+    padding: 0 20px;
+}
+
+/* Mobile responsive compatibility adjustments for columns stacking */
+@media (max-width: 768px) {
+    .layout-main-split {
+        flex-direction: column;
+    }
+    .layout-left-column, 
+    .layout-right-column {
+        width: 100%;
+    }
+}
 /*images */
 img {
   width: 200px;
@@ -213,7 +361,54 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     align-items: center;
     flex-wrap: wrap;
 }
+/* contact form */
+.contact-form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f4ff;
+    border-radius: 15px;
+}
 
+.contact-form input,
+.contact-form textarea {
+    width: 100% !important;
+    padding: 10px;
+    border: 1px solid #d8c9f0;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    width: auto !important;
+    background-color: #d8c9f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* Notification Styling */
+#formNotification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #d8c5e6;
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+
+    z-index: 9999; 
+}
+
+#formNotification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* Labels */
 label {
     font-weight: bold;
@@ -271,6 +466,7 @@ input[type="range"] {
     opacity: 1;
     visibility: visible;
 }
+
 /* Hover effect */
 select:hover {
     border-color: #7e57c2;
