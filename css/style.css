@@ -229,7 +229,60 @@ color: #2B292A;
     font-weight: bold;
     color: #2B292A;
 }
+/*Reveiw Notification*/
+#reviewNotification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #d8c5e6; /* lilac */
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 99999; 
+    
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    pointer-events: none;
+}
 
+/* visibility trigger class */
+#reviewNotification.review-show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+/*star rating*/
+.star-rating-input {
+    font-size: 28px;
+    cursor: pointer;
+    color: #ccc; /* Grey stars by default */
+    display: inline-block;
+}
+.star-rating-input .star.active {
+    color: #ffd700; /* Lights up with your signature Lilac theme color! */
+}
+/* Coloring the existing customer review stars gold */
+.reviews-table td p:nth-of-type(2),
+.reviews-table td p.stars {
+    color: #FFD700 !important; /* Premium Gold */
+    font-size: 18px;            /* Gives them a nice clear size bump */
+    letter-spacing: 2px;        /* Spreads the stars out slightly so they look clean */
+    font-weight: bold;
+}
+/* Styling for the interactive table rows */
+.reviews-table tr {
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Subtle lift animation effect when a user hovers over a customer review card */
+.reviews-table tr:hover {
+    background-color: #FFF9FC !important; /* Soft backdrop light tint match */
+    transform: scale(1.01); /* Gives a tiny pop-out depth change indicator */
+}
 /* Navigation Menu */
 nav a{
 text-decoration: none;
@@ -354,7 +407,37 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     border-radius: 10%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
-/* Container for both dropdowns */
+/* Image Upload Container Wrapper for File Uploads on Review Page */
+.file-upload-wrapper {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1px solid #AA83B6; /* Your signature brand lilac */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.file-upload-wrapper input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Custom placeholder typography format */
+.file-custom-placeholder {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #6D5B66;
+}
+/* Container for both dropdowns filters  */
 .filters {
     display: flex;
     gap: 15px;
