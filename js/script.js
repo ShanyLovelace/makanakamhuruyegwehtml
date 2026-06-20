@@ -102,16 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         notification.classList.remove("show");
     }, 3000);
-    }
-    let notification = document.getElementById("formNotification");
+    } 
 
-if (notification) {
-    notification.textContent = "Message submitted successfully!";
-    notification.classList.add("show");
-
-    setTimeout(() => {
-        notification.classList.remove("show");
-        notification.textContent = "";
-    }, 3000);
-}
 });
