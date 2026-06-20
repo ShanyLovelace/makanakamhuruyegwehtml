@@ -1,15 +1,22 @@
-/*Font Imports*/
+/* style.css - main stylesheet for makanakamhuruyegwehtml
+   Includes typography, layout, forms, notifications, hero sections,
+   catalogue/grid styles, and responsive adjustments. */
+
+/* import custom fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Great+Vibes&family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap');
 
+/* universal box-sizing reset for consistent padding/border calculations */
 * {
     box-sizing: border-box;
 }
 
+/* root HTML element styling */
 html {
     font-size: 16px;
     scroll-behavior: smooth;
 }
 
+/* page body styling with cream background and default font */
 body {
     margin: 0;
     padding: 0;
@@ -19,7 +26,7 @@ body {
     line-height: 1.5;
 }
 
-/* Typography Rules */
+/* typography and heading styles */
 h2 {
     margin: 0;
     font-family: 'Fredoka', sans-serif; /* Updated font */
@@ -134,9 +141,7 @@ header h2 {
     color: white;
 }
 
-/* ==========================================================================
-   4. FORMS & INPUTS
-   ========================================================================== */
+/* 4. FORMS & INPUTS */
 .toy-clean-form {
     display: flex;
     flex-direction: column;
@@ -226,9 +231,7 @@ header {
     align-items: center; 
 }
 
-/* ==========================================================================
-   5. NOTIFICATIONS & INTERACTIVE PLUGINS
-   ========================================================================== */
+/* 5. NOTIFICATIONS & INTERACTIVE PLUGINS */
 #reviewNotification {
     position: fixed;
     top: 20px;
@@ -369,9 +372,7 @@ iframe {
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* ==========================================================================
-   6. HERO GRID CONTAINER
-   ========================================================================== */
+/* 6. HERO GRID CONTAINER */
 .hero-section {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -437,9 +438,7 @@ iframe {
     100% { opacity: 1; transform: translateX(0) scale(1); }
 }
 
-/* ==========================================================================
-   7. CATALOGUE, FOOTER & UTILITIES
-   ========================================================================== */
+/* 7. CATALOGUE, FOOTER & UTILITIES */
 #catalogue {
     margin-left: auto;
     margin-right: auto;
@@ -1055,9 +1054,7 @@ select:focus {
     color: #6D5B66;
 }
 
-/* ==========================================================================
-   8. RESPONSIVENESS & FAQS
-   ========================================================================== */
+/* 8. RESPONSIVENESS & FAQS */
 @media (max-width: 1024px) {
     .shops-container {
         flex-direction: row;
