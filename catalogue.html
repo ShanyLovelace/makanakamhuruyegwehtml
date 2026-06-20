@@ -30,6 +30,7 @@
 
 <section>
 <table width="100%">
+    <tr>
     <td class="logo-area">
     <img src="images/logo.png" alt="Picture of diverse dolls" width="100">
     <p>A Toy for Every Child. A Memory for Every Heart</p>
@@ -37,7 +38,7 @@
 
         <td align="right"><!--searching for a toy will use javascript to activate-->
             <form>
-                <input type="search" placeholder="What are you looking for?">
+                <input type="search" id="searchBox" placeholder="What are you looking for?">
             </form>
         </td>
     </tr>
@@ -202,6 +203,10 @@
     <p>© 2026 Shany's Handmade Toys. All rights reserved.</p>
 </footer>
 <div id="notification"></div>
+<div id="redirectNotification"></div>
+<div id="searchNotification"></div>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script> <!--linking to external java script file-->
 <script src="js/script.js"></script> <!--linking to external java script file-->
 </body>
 </html>
