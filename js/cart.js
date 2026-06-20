@@ -21,6 +21,11 @@ const checkoutBtn = document.getElementById("checkoutBtn");
 // Display cart items
 function renderCart() {
 
+    // Safety check: if cartItems element doesn't exist on this page, exit early to prevent crashes
+    if (!cartItems) {
+        return;
+    }
+
     cartItems.innerHTML = "";
 
     let total = 0;
@@ -28,7 +33,7 @@ function renderCart() {
     if (cart.length === 0) {
 
         cartItems.innerHTML = "<p>Your cart is empty </p>";
-        totalPrice.textContent = "Total: R0";
+        if (totalPrice) totalPrice.textContent = "Total: R0";
 
         return;
     }
@@ -72,7 +77,9 @@ function renderCart() {
         cartItems.appendChild(div);
     });
 
-    totalPrice.textContent = "Total: R" + total;
+    if (totalPrice) {
+        totalPrice.textContent = "Total: R" + total;
+    }
 
     localStorage.setItem("cart", JSON.stringify(cart));
 }
