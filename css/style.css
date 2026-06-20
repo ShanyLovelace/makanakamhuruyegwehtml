@@ -63,7 +63,21 @@ header h2 {
     letter-spacing: 0.5px;
     display: inline-block;
 }
+.diverse-image{
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px){
 
+    .diverse-image{
+        width: 95%;
+        max-width: 350px;
+    }
+
+}
 /* layout, images & header */
 .layout-main-split {
     display: flex;
@@ -334,7 +348,7 @@ section p {
 
 .logo-area p {
     font-family: 'Great Vibes', cursive;
-    font-size: 32px;       /* Cursive needs to be larger to read easily */
+    font-size: 20PX;       /* Cursive needs to be larger to read easily */
     color: #5A4A52;        /* Your soft dark plum color */
     margin: 0;
     line-height: 1.2;
@@ -1104,7 +1118,7 @@ select:focus {
     h3 { font-size: 18px; }
 
     body {
-        padding: 10px;
+        padding: 0px;
     }
 }
 
