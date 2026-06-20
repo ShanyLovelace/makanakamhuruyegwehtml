@@ -1147,7 +1147,39 @@ select:focus {
 .faq-item p {
     margin: 8px 0;
 }
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color:#D9A7A7; 
+    color: black;
+    border: none;
+    border-radius: 50%; /* Makes it a circle */
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+   
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0; 
+    pointer-events: none; /* Prevents clicking it while it's invisible */
+    z-index: 1000; /* Keeps it on top of everything else */
+}
 
+
+#backToTop.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+#backToTop:hover {
+    transform: scale(1.1);
+    background-color: #AA83B6;
+}
 footer {
     background-color: #AA83B6; 
     color: #4B2E57;
