@@ -14,9 +14,17 @@ A website for Shany's Handmade Toys, showcasing inclusive, handmade toys designe
 
 ## 🌐 Pages
 Home | Catalogue | About Us | Reviews | Contact Us |Enquiry| Cart
----
-## Demployment Link
-https://shanylovelace.github.io/makanakamhuruyegwehtml/
+
+## Features
+Interactive product catalogue
+Shopping cart system
+Search functionality with highlighting
+Lightbox image viewing
+Contact and enquiry forms
+EmailJS integration for message delivery
+Review and rating system
+Cookie consent banner
+Responsive design for mobile and desktop
 ---
 ## References
 Domains.co.za (2025) Domain name search and register. Available at: https://www.domains.co.za/domain-registration (Accessed: 14 April 2026).
@@ -39,7 +47,6 @@ Host Africa (2025) Web hosting – free domain included. Available at: https://h
 
 African Soxy Animal (2021) Handmade zebra plush toy – 100% cotton sock soft toy for kids. Available at: https://www.africansoxyanimal.co.za/product/sock-zebra-handmade-plush-toy/ (Accessed: 14 April 2026).
 
-Part 3 References
 Forever Virginia (n.d.) Forever Virginia. Available at: https://forevervirginia.com/ (Accessed: 21 June 2026).
 
 Wool Warehouse South Africa (n.d.) Wool Warehouse. Available at: https://woolwarehouse.co.za/ (Accessed: 21 June 2026).
