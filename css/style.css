@@ -500,6 +500,46 @@ section p {
     line-height: 1.2;
     letter-spacing: 1px;  
 } 
+/* --- Responsive Mobile Layout Breakdowns --- */
+@media (max-width: 768px) {
+    .layout-main-split {
+        flex-direction: column;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    
+    .layout-left-column,
+    .layout-right-column {
+        width: 100%;
+        flex: none;
+    }
+
+    
+    .toy-card-img {
+        width: 60% !important;
+        max-width: 100% !important;
+        height: auto !important; /* Prevents stretching or squishing */
+    }
+
+
+    section tr, 
+    section td {
+        display: block;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    
+    section td {
+        padding: 10px 0;
+    }
+
+    .logo-area {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
 @media screen and (max-width: 430px) {
     .logo-area p {
         font-size: 1.4rem;
