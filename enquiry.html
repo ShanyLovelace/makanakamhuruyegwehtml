@@ -49,50 +49,10 @@
     </tr>
 </table>
 </section>
-
-<div class="layout-main-split">
-
-    <div class="layout-left-column">
-        
-        <div class="toy-card-item">
-            <h3>Store 1</h3>
-           <p align="center"><img src="images/shop.png" alt="Shop 1 Image" class="toy-card-img" width="50%" height="auto" /></p>
-            <div class="toy-card-details">
-                <p><strong>Location:</strong> Mafikeng The Crossing</p>
-                <p><strong>Email:</strong> mafikengcrossingsupport@gmail.com</p>
-                <p><strong>Phone:</strong> 073 002 1036</p>
-            </div>
-            <a href="https://maps.google.com" class="toy-card-action-btn">Directions</a>
-        </div>
-
-        <div class="toy-card-item">
-            <h3>Store 2</h3>
-            <p align="center"><img src="images/shop.png" alt="Store 2 Image" class="toy-card-img" /></p>
-            <div class="toy-card-details">
-                <p><strong>Location:</strong> Mafikeng Mega City</p>
-                <p><strong>Email:</strong> mafikengmegacity@gmail.com</p>
-                <p><strong>Phone:</strong> 073 221 0522</p>
-            </div>
-            <a href="https://maps.google.com" class="toy-card-action-btn">Directions</a>
-        </div>
-
-        <div class="toy-card-item">
-            <h3>Opening Hours</h3>
-            <div class="toy-card-details">
-                <p>Find handmade toys and gifts near you.</p>
-                <hr style="border: 0; border-top: 1px solid rgba(170,131,182,0.2); margin: 12px 0;">
-                <p><strong>Monday - Friday:</strong> 08:00 - 17:00</p>
-                <p><strong>Saturday:</strong> 09:00 - 15:00</p>
-                <p><strong>Sunday:</strong> Closed</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="layout-right-column">
+  <div class="layout-right-column">
         <div class="toy-form-wrapper-card">
-            <h2>Send us a Message</h2>
-            <p>Please fill out the form below and we'll get back to you as soon as possible.</p>
+            <h2>Product Enquiry</h2>
+<p>Please fill out the form below and we'll get back to you as soon as possible.</p>
             <form id="contactForm" class="toy-clean-form" action="#" method="post">
                 <div class="toy-field-group">
                     <label for="name">Name *</label>
@@ -111,7 +71,17 @@
                     <label for="email">Email *</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-
+                 <div class="toy-field-group">
+    <label for="enquiryType">Enquiry Type *</label>
+    <select id="enquiryType" name="enquiryType" required>
+        <option value="">-- Select an Enquiry Type --</option>
+        <option value="general">General Enquiry</option>
+        <option value="stock">Product Stock and Availability</option>
+        <option value="custom">Custom Doll Request</option>
+        <option value="repair">Doll Repair & Restoration</option>
+        <option value="other">Other</option>
+    </select>
+</div>
                 <div class="toy-field-group">
                     <label for="message">Message *</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
@@ -123,67 +93,84 @@
     </div>
 
 </div>
-
-<div class="toy-bottom-map-container">
-    <div class="contact-map">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.594506281391!2d25.636368574498!3d-25.856529077292503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ea2cae78364c3b3%3A0x964865997e30c27f!2sMahikeng%20Mall!5e1!3m2!1sen!2sza!4v1780078959018!5m2!1sen!2sza"
-            style="border:0; width:100%; height:450px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-</div>
 <div id="formNotification"></div>
 <button id="backToTop" aria-label="Back to top">&#8593;</button>
+<footer>
+    <p>
+        Follow us: 
+        <a href="https://www.instagram.com/shanystoys">Instagram</a> | 
+        <a href="https://wa.me/27730902566">WhatsApp</a>
+    </p>
+    <p>
+        Contact us: 
+        email: shanystoys@gmail.com | Phone: 073 090 2577
+    </p>
+    <p>© 2026 Shany's Handmade Toys. All rights reserved.</p>
+</footer>
+<div id="notification"></div>
+<div id="redirectNotification"></div>
+<div id="searchNotification"></div>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script> 
+<script src="js/script.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-    // ✅ correct init (PUBLIC KEY goes here)
     emailjs.init({
         publicKey: "N6hrQhBGDhM2S18u7"
     });
 
     const contactForm = document.getElementById("contactForm");
-    const notification = document.getElementById("formNotification");
 
-    contactForm.addEventListener("submit", function (event) {
+    contactForm.addEventListener("submit", function(event) {
+
         event.preventDefault();
 
-        const params = {
+        const templateParams = {
             name: document.getElementById("name").value,
             surname: document.getElementById("surname").value,
             phone: document.getElementById("phone").value,
             email: document.getElementById("email").value,
-            message: document.getElementById("message").value
+            enquiryType: document.getElementById("enquiryType").value,
+            message: document.getElementById("message").value,
+            time: new Date().toLocaleString()
         };
+const notification = document.getElementById("formNotification");
 
-        emailjs.send(
-            "service_1cpvfoa",
-            "template_krk9s1f", 
-            params
-        )
-        .then(function () {
+emailjs.send(
+    "service_1cpvfoa",
+    "template_krk9s1f",
+    templateParams
+)
+.then(function () {
 
-            notification.textContent = "Message submitted successfully!";
-            notification.classList.add("show");
+    notification.textContent = "✓ Your enquiry has been submitted successfully!";
+    notification.className = "show success";
 
-            setTimeout(() => {
-                notification.classList.remove("show");
-                notification.textContent = "";
-            }, 3000);
+    contactForm.reset();
 
-            contactForm.reset();
+    setTimeout(() => {
+        notification.className = "";
+        notification.textContent = "";
+    }, 3000);
 
-        })
-        .catch(function (error) {
-            console.error("EmailJS Error:", error);
+})
+.catch(function (error) {
 
-            notification.textContent = "Failed to send message.";
-            notification.classList.add("show");
-        });
-    });
+    console.error("EmailJS Error:", error);
 
+    notification.textContent = "✖ Sorry! Your enquiry could not be sent.";
+    notification.className = "show error";
+
+    setTimeout(() => {
+        notification.className = "";
+        notification.textContent = "";
+    }, 3000);
+
+});
+});
 });
 </script>
 </body>

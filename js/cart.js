@@ -145,7 +145,7 @@ if (checkoutBtn) {
             return;
         }
 
-        showNotification("Thank you for shopping at Shany's Handmade Toys! 🎉");
+        showNotification("Thank you for shopping at Shany's Handmade Toys!");
 
         cart = [];
 
