@@ -78,6 +78,113 @@ header h2 {
     }
 
 }
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    /* IMPORTANT FIX */
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,0.85);
+}
+/*Shop most popular toys section*/
+/* Shop most popular toys section */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.carousel {
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel-track img {
+    width: 180px;
+    border-radius: 16px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+/* arrows */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 14px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.carousel-btn.left {
+    left: 5px;
+}
+
+.carousel-btn.right {
+    right: 5px;
+}
+.carousel-btn:active {
+    transform: translateY(-50%);
+}
+/* mobile */
+@media (max-width: 600px) {
+  .carousel-track img {
+      width: 140px;
+  }
+}
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 40px 0 20px;
+}
+
+.popular-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.popular-grid img {
+    width: 150px;
+    height: auto;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
 /* layout, images & header */
 .layout-main-split {
     display: flex;
