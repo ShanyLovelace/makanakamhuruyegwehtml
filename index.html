@@ -254,6 +254,17 @@
 <script src="js/cookie.js"></script>
 <script src="js/search.js"></script> <!-- linking to external java script file -->
 <script src="js/script.js"></script> <!-- linking to external java script file -->
+ <script>
+function scrollCarousel(direction) {
+    const carousel = document.getElementById("carousel");
+    const scrollAmount = 220; // adjust if needed
+
+    carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: "smooth"
+    });
+}
+</script>
 <script>
 const reviews = [
 {
@@ -303,17 +314,6 @@ setInterval(function() {
 
     showReview(currentReview);
 }, 5000);
-</script>
-<script>
-function scrollCarousel(direction) {
-    const carousel = document.getElementById("carousel");
-    const scrollAmount = 220; // adjust if needed
-
-    carousel.scrollBy({
-        left: direction * scrollAmount,
-        behavior: "smooth"
-    });
-}
 </script>
 </body>
 </html>

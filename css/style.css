@@ -94,7 +94,6 @@ header h2 {
     background: rgba(0,0,0,0.85);
 }
 /*Shop most popular toys section*/
-/* Shop most popular toys section */
 .carousel-wrapper {
     position: relative;
     width: 100%;
@@ -105,7 +104,6 @@ header h2 {
     overflow-x: auto;
     padding: 20px 10px;
     box-sizing: border-box;
-    scroll-snap-align: start;
     scroll-behavior: smooth;
 
     scrollbar-width: none;
@@ -119,6 +117,7 @@ header h2 {
 .carousel-track {
     display: flex;
     gap: 20px;
+    min-width: max-content;
 }
 
 .carousel-track img {
