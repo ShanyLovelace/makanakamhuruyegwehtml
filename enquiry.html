@@ -13,16 +13,21 @@
 </head>
 <body>
 <!-- Header -->
-<header>
-<h2 class="nameofbusiness">Shany's Handmade Toys</h2>
-            <nav>
-                <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="catalogue.html">Shop</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="about.html">About Us</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="review.html">Reviews</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="contact.html">Contact Us</a>
-                <a href="enquiry.html">Enquiry</a>
-            </nav>
+ <header>
+    <h2 class="nameofbusiness">Shany's Handmade Toys</h2>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="catalogue.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="review.html">Reviews</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="enquiry.html">Enquiry</a>
+    </nav>
 <nav>
 <a href="cart.html" id="cartCount" aria-label="Shopping cart">
     <svg width="18" height="18" viewBox="0 0 24 24">
@@ -114,6 +119,28 @@
 <script src="js/cart.js"></script>
 <script src="js/search.js"></script> 
 <script src="js/script.js"></script> 
+<script>
+function toggleMenu() {
+    const nav = document.getElementById("mobileNav");
+    const btn = document.querySelector(".menu-toggle");
+
+    nav.classList.toggle("active");
+
+    btn.textContent = nav.classList.contains("active") ? "✕" : "☰";
+}
+</script>
+<script>
+function scrollCarousel(direction) {
+    const carousel = document.getElementById("carousel");
+    const scrollAmount = 220; // adjust if needed
+
+    carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: "smooth"
+    });
+}
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
