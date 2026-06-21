@@ -14,17 +14,17 @@ A website for Shany's Handmade Toys, showcasing inclusive, handmade toys designe
 
 ## 🌐 Pages
 Home | Catalogue | About Us | Reviews | Contact Us |Enquiry| Cart
-
+---
 ## Features
-Interactive product catalogue
-Shopping cart system
-Search functionality with highlighting
-Lightbox image viewing
-Contact and enquiry forms
-EmailJS integration for message delivery
-Review and rating system
-Cookie consent banner
-Responsive design for mobile and desktop
+- Interactive product catalogue
+- Shopping cart system
+- Search functionality with highlighting
+- Lightbox image viewing
+- Contact and enquiry forms
+- EmailJS integration for message delivery
+- Review and rating system
+- Cookie consent banner
+- Responsive design for mobile and desktop
 ---
 ## References
 Domains.co.za (2025) Domain name search and register. Available at: https://www.domains.co.za/domain-registration (Accessed: 14 April 2026).
