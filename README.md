@@ -1,5 +1,8 @@
 # makanakamhuruyegwehtml
 # Shany's Handmade Toys
+---
+## Demployment Link
+https://shanylovelace.github.io/makanakamhuruyegwehtml/
 
 ## Description
 A website for Shany's Handmade Toys, showcasing inclusive, handmade toys designed to reflect every child’s identity and story.
@@ -10,7 +13,10 @@ A website for Shany's Handmade Toys, showcasing inclusive, handmade toys designe
 ---
 
 ## 🌐 Pages
-Home | Catalogue | About Us | Reviews | Contact Us 
+Home | Catalogue | About Us | Reviews | Contact Us |Enquiry| Cart
+---
+## Demployment Link
+https://shanylovelace.github.io/makanakamhuruyegwehtml/
 ---
 ## References
 Domains.co.za (2025) Domain name search and register. Available at: https://www.domains.co.za/domain-registration (Accessed: 14 April 2026).
@@ -33,7 +39,20 @@ Host Africa (2025) Web hosting – free domain included. Available at: https://h
 
 African Soxy Animal (2021) Handmade zebra plush toy – 100% cotton sock soft toy for kids. Available at: https://www.africansoxyanimal.co.za/product/sock-zebra-handmade-plush-toy/ (Accessed: 14 April 2026).
 
+Part 3 References
+Forever Virginia (n.d.) Forever Virginia. Available at: https://forevervirginia.com/ (Accessed: 21 June 2026).
 
+Wool Warehouse South Africa (n.d.) Wool Warehouse. Available at: https://woolwarehouse.co.za/ (Accessed: 21 June 2026).
+
+Rare Beauty (n.d.) Rare Beauty Official Website. Available at: https://www.rarebeauty.com/ (Accessed: 21 June 2026).
+
+EmailJS (n.d.) EmailJS Documentation and Services. Available at: https://www.emailjs.com/ (Accessed: 21 June 2026).
+
+W3Schools (n.d.) Java Tutorial and Documentation. Available at: https://www.w3schools.com/java/ (Accessed: 21 June 2026).
+
+Google Gemini (n.d.) Gemini AI Chat and Prompting Assistance. Available at: https://gemini.google.com/ (Accessed: 21 June 2026).
+
+OpenAI (n.d.) ChatGPT – AI Assistant for Coding, Debugging and Prompt Guidance. Available at: https://chat.openai.com/ (Accessed: 21 June 2026).
 ---
 ## About
 Founded in 2022, Shany's Handmade Toys creates customizable, high-quality toys that celebrate diversity, culture, and individuality.  
