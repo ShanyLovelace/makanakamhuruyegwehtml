@@ -57,9 +57,10 @@ EmailJS (n.d.) EmailJS Documentation and Services. Available at: https://www.ema
 
 W3Schools (n.d.) Java Tutorial and Documentation. Available at: https://www.w3schools.com/java/ (Accessed: 21 June 2026).
 
+OpenAI (n.d.) ChatGPT – AI Assistant for Coding, Debugging and Prompt Guidance. Available at: https://chat.openai.com/ (Accessed: 21 June 2026).
+
 Google Gemini (n.d.) Gemini AI Chat and Prompting Assistance. Available at: https://gemini.google.com/ (Accessed: 21 June 2026). 
 
-- OpenAI (n.d.) ChatGPT – AI Assistant for Coding, Debugging and Prompt Guidance. Available at: https://chat.openai.com/ (Accessed: 21 June 2026).
 ---
 ## About
 Founded in 2022, Shany's Handmade Toys creates customizable, high-quality toys that celebrate diversity, culture, and individuality.  
