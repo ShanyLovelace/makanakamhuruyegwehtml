@@ -2,6 +2,26 @@
 
 All notable changes to this project are documented here.
 
+## [22 June 2026]
+
+### Added
+- Introduced mobile navigation toggle across all main pages (Home, Shop, About, Reviews, Contact, Enquiry, Cart).
+- Added hamburger menu button for mobile navigation.
+- Added toggleMenu() function for opening and closing the mobile navigation.
+- Added scrollCarousel() function for smooth horizontal carousel scrolling.
+- Added <nav id="mobileNav"> structure for responsive navigation layout.
+
+### Improved
+- Improved header responsiveness for mobile devices.
+- Enhanced navigation hover effects for better user interaction feedback.
+- Reorganized script loading for better page performance and stability.
+- Improved logo area layout and text scaling on smaller screens.
+
+### Fixed
+- Fixed mobile navigation layout issues on smaller screens.
+- Fixed minor responsiveness inconsistencies across pages.
+- Resolved layout spacing issues in header and navigation alignment.
+
 ## [21 June 2026]
 
 ### Added
